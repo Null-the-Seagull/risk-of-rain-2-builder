@@ -35,23 +35,23 @@ body, h1,h2,h3,h4,h5,h6 {
 }
 
 .white {
-  background-image: url("/icons/white.png");
+  background-image: url("icons/white.png");
 }
 .green {
-  background-image: url("/icons/green.png");
+  background-image: url("icons/green.png");
   
 }
 .red {
-  background-image: url("/icons/red.png");
+  background-image: url("icons/red.png");
 }
 .yellow {
-  background-image: url("/icons/yellow.png");
+  background-image: url("icons/yellow.png");
 }
 .blue {
-  background-image: url("/icons/blue.png");
+  background-image: url("icons/blue.png");
 }
 .orange {
-  background-image: url("/icons/orange.png");
+  background-image: url("icons/orange.png");
 }
 
 .filterDiv {
