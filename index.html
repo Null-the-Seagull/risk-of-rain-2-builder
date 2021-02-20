@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<title>Risk of Rain 2 Builder</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>BUILDER</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>placeholder</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>placeholder</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>placeholder</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+ 
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-8 w3-center w3-black" id="home">
+    <h1 class="w3-xxlarge"><span class="w3-hide-small"></span>Risk of Rain 2 Builder</h1>
+    <p>A build utility for Risk of Rain 2</p>
+  </header>
+<hr>   
+  <!-- About Section -->
+    
+    <!-- Menu Button -->
+    <div class="container" onclick="menuIcon(this)">
+        <div class="menuIcon"></div>
+        <div class="menuIcon"></div>
+        <div class="menuIcon"></div>
+    </div>
+    
+    <!-- Modal Menu -->
+    <div id="modalMenu" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" id="spanClose">&times;</span>
+            <!-- Filter Control Buttons -->
+            <div id="myBtnContainer">
+              <button class="btn active" onclick="filterSelection('all')" style="border-color: deeppink"> Show all</button>
+                <button class="btn" onclick="filterSelection('white')" style="background-color: #DDE5E7"> Common</button>
+                <button class="btn" onclick="filterSelection('green')" style="background-color: #7BCD43"> Uncommon</button>
+                <button class="btn" onclick="filterSelection('red')" style="background-color: #F95B40"> Legendary</button>
+                <button class="btn" onclick="filterSelection('yellow')" style="background-color: #CADB25"> Yellow</button>
+                <button class="btn" onclick="filterSelection('blue')" style="background-color: #3ED5EF"> Lunar</button>
+                <button class="btn" onclick="filterSelection('orange')" style="background-color: #DF872A"> Equipment</button>             
+            </div>
+          
+            <div class="filterContainer">
+                <div class="filterDiv white"><img src="\icons\white\armor-piercing-rounds.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\backup-magazine.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\bundle-of-fireworks.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\bustling-fungus.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\cautious-slug.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\crowbar.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\energy-drink.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\favicon@2x.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\focus-crystal.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\fresh-meat.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\gasoline.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\item-scrap-white.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\lens-makers-glasses.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\medkit.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\monster-tooth.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\pauls-goat-hoof.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\personal-shield-generator.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\repulsion-armor-plate.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\rusted-key.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\soldiers-syringe.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\sticky-bomb.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\stun-grenade.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\topaz-brooch.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\tougher-times.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\tri-tip-dagger.png"></div>
+                <div class="filterDiv white"><img src="\icons\white\warbanner.png"></div>
+
+                <div class="filterDiv green"><img src="\icons\green\atg-missile-mk-1.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\bandolier.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\berzerkers-pauldron.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\chronobauble.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\death-mark.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\fuel-cell.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\ghors-tome.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\harvesters-scythe.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\hopoo-feather.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\infusion.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\item-scrap-green.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\kjaros-band.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\leeching-seed.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\lepton-daisy.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\old-guillotine.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\old-war-stealthkit.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\predatory-instincts.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\razorwire.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\red-whip.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\rose-buckler.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\runalds-band.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\squid-polyp.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\ukulele.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\war-horn.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\wax-quail.png"></div>
+                <div class="filterDiv green"><img src="\icons\green\will-o-the-wisp.png"></div>
+                
+                <div class="filterDiv red"><img src="\icons\red\57-leaf-clover.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\aegis.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\alien-head.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\brainstalks.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\brilliant-behemoth.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\ceremonial-dagger.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\defensive-microbots.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\dios-best-friend.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\frost-relic.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\h3ad-5t-v2.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\happiest-mask.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\hardlight-afterburner.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\interstellar-desk-plant.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\item-scrap-red.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\nkuhanas-opinion.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\rejuvenation-rack.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\resonance-disc.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\sentient-meat-hook.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\shattering-justice.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\soulbound-catalyst.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\unstable-tesla-coil.png"></div>
+                <div class="filterDiv red"><img src="\icons\red\wake-of-vultures.png"></div>
+
+                <div class="filterDiv yellow"><img src="\icons\yellow\artifact-key.png"></div>
+                <div class="filterDiv yellow"><img src="\icons\yellow\genesis-loop.png"></div>
+                <div class="filterDiv yellow"><img src="\icons\yellow\halcyon-seed.png"></div>
+                <div class="filterDiv yellow"><img src="\icons\yellow\irradiant-pearl.png"></div>
+                <div class="filterDiv yellow"><img src="\icons\yellow\item-scrap-yellow.png"></div>
+                <div class="filterDiv yellow"><img src="\icons\yellow\little-disciple.png"></div>
+                <div class="filterDiv yellow"><img src="\icons\yellow\miyellow-urn.png"></div>
+                <div class="filterDiv yellow"><img src="\icons\yellow\molten-perforator.png"></div>
+                <div class="filterDiv yellow"><img src="\icons\yellow\pearl.png"></div>
+                <div class="filterDiv yellow"><img src="\icons\yellow\queens-gland.png"></div>
+                <div class="filterDiv yellow"><img src="\icons\yellow\shatterspleen.png"></div>
+                <div class="filterDiv yellow"><img src="\icons\yellow\titanic-knurl.png"></div>
+                
+                <div class="filterDiv orange"><img src="\icons\orange\blast-shower.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\disposable-missile-launcher.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\eccentric-vase.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\foreign-fruit.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\forgive-me-please.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\fuel-array.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\gnarled-woodsprite.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\gorags-opus.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\her-biting-embrace.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\ifrits-distinction.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\jade-elephant.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\milky-chrysalis.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\nkuhanas-retort.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\ocular-hud.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\preon-accumulator.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\primordial-cube.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\radar-scanner.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\recycler.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\royal-capacitor.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\sawmerang.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\silence-between-two-strikes.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\super-massive-leech.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\the-back-up.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\the-crowdfunder.png"></div>
+                <div class="filterDiv orange"><img src="\icons\orange\volcanic-egg.png"></div>
+
+                <div class="filterDiv blue"><img src="\icons\blue\beads-of-fealty.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\brittle-crown.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\corpsebloom.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\defiant-gouge.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\effigy-of-grief.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\focused-convergence.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\gesture-of-the-drowned.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\glowing-meteorite.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\helfire-tincture.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\mercurial-rachis.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\purity.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\shaped-glass.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\spinel-tonic.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\strides-of-heresy.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\transcendence.png"></div>
+                <div class="filterDiv blue"><img src="\icons\blue\visions-of-heresy.png"></div>
+            </div>
+
+      </div>
+
+    </div>
+      
+
+    <p>I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+</div>
+
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://saiyanide.github.io/"><i class="fa fa-globe w3-hover-opacity"></i></a>   
+    <a href="https://twitter.com/Saiyanide"><i class="fa fa-twitter w3-hover-opacity"></i></a>   
+    <a href="https://github.com/saiyanide"><i class="fa fa-github w3-hover-opacity"></i></a>   
+
+    <a href="mailto:email_placeholder"><i class="fa fa-envelope w3-hover-opacity"></i></a>   
+  <!-- End footer -->
+  </footer>
+
+</body>
+</html>
